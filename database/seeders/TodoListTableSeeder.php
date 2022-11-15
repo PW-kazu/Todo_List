@@ -3,9 +3,10 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\ToDoList;
+use Illuminate\Support\Facades\DB;
 
-
-class TodoListSeeder extends Seeder
+class TodoListTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +15,6 @@ class TodoListSeeder extends Seeder
      */
     public function run()
     {
-        todolist::factory()->create();
+        Todolist::factory()->create();
     }
 }
