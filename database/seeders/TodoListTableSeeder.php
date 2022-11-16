@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\ToDoList;
+use App\Models\TodoList;
 use Illuminate\Support\Facades\DB;
 
 class TodoListTableSeeder extends Seeder

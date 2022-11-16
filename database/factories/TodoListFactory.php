@@ -3,7 +3,8 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use App\Models\ToDoList;
+use App\Models\TodoList;
+use Illuminate\Support\Str;
 
 class TodoListFactory extends Factory
 {
