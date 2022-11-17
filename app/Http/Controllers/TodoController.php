@@ -15,7 +15,7 @@ class TodoController extends Controller
         return view('index',['todos'=>$todos]);
     }
 
-    public function create(TodoListRequest $request)
+    public function create(TodoRequest $request)
     {
         $form =$request->all();
         unset($form['_token']);
@@ -23,7 +23,7 @@ class TodoController extends Controller
         return redirect('/');
     }
 
-    public function update(TodoListRequest $request)
+    public function update(TodoRequest $request)
     {
         $form = $request->all();
         unset($form['_token']);
@@ -33,7 +33,7 @@ class TodoController extends Controller
         
     }
 
-    public function delete(Request $request)
+    public function delete(TodoRequest $request)
     {
         Todolist::find($request->id)->delete();
         return redirect('/');
